@@ -1,0 +1,17 @@
+D:\Projeto Padrao\mcdev_controls\mcdev_controls\obj\Debug\mcdev_controls.csprojResolveAssemblyReference.cache
+D:\Projeto Padrao\mcdev_controls\mcdev_controls\obj\Debug\mcdev_controls.csproj.GenerateResource.Cache
+D:\Projeto Padrao\mcdev_controls\mcdev_controls\obj\Debug\mcdev_controls.Form1.resources
+D:\Projeto Padrao\mcdev_controls\mcdev_controls\obj\Debug\mcdev_controls.Headers.ExpandCollapseButton_B.resources
+D:\Projeto Padrao\mcdev_controls\mcdev_controls\obj\Debug\mcdev_controls.Headers.Vertical.ExpandVerticalCollapseButton.resources
+D:\Projeto Padrao\mcdev_controls\mcdev_controls\obj\Debug\mcdev_controls.Properties.Resources.resources
+D:\Projeto Padrao\mcdev_controls\mcdev_controls\bin\Debug\mcdev_controls.dll
+D:\Projeto Padrao\mcdev_controls\mcdev_controls\bin\Debug\mcdev_controls.pdb
+D:\Projeto Padrao\mcdev_controls\mcdev_controls\obj\Debug\mcdev_controls.dll
+D:\Projeto Padrao\mcdev_controls\mcdev_controls\obj\Debug\mcdev_controls.pdb
+D:\Projeto Padrao\mcdev_controls\mcdev_controls\obj\Debug\mcdev_controls.Dialog.mcConfirme_Dialog.resources
+D:\Projeto Padrao\mcdev_controls\mcdev_controls\obj\Debug\mcdev_controls.Dialog.mcInput_Dialog.resources
+D:\Projeto Padrao\mcdev_controls\mcdev_controls\obj\Debug\mcdev_controls.Dialog.mcMessage_Dialog.resources
+D:\Projeto Padrao\mcdev_controls\mcdev_controls\obj\Debug\mcdev_controls.Headers.Vertical.mcExpandVerticalCollapsePanel.resources
+D:\Projeto Padrao\mcdev_controls\mcdev_controls\obj\Debug\mcdev_controls.Headers.mcExpandCollapsePanel.resources
+D:\Projeto Padrao\mcdev_controls\mcdev_controls\obj\Debug\pControlsDev.C_TextBox.mcTextBox_DateTime.resources
+D:\Projeto Padrao\mcdev_controls\mcdev_controls\obj\Debug\mcdev_controls.C_TextBox.mcTextBox_Moeda.resources
