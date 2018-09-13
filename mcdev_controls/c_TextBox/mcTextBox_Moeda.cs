@@ -10,15 +10,12 @@ using System.Windows.Forms;
 
 namespace mcdev_controls.C_TextBox
 {
+    [Designer(typeof(TextBoxDesigner))]
     public partial class mcTextBox_Moeda : TextBox
     {
         public decimal _DECIMAIS_MOEDA { get; set; }
         public bool _SHOWSIMBOLO { get; set; }
         
-        public bool _VALID_VAZIO { get; set; }
-        public String _DESC_VALID_VAZIO { get; set; }
-        public String _MENSMDI { get; set; }
-
         public mcTextBox_Moeda()
         {
             InitializeComponent();

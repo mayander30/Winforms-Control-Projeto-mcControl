@@ -33,7 +33,6 @@
             this.mcExpandCollapsePanel1 = new mcdev_controls.Headers.mcExpandCollapsePanel();
             this.mcPanelBorderRounded1 = new mcdev_controls.Painel.mcPanelBorderRounded();
             this.mcTextBox_Moeda1 = new mcdev_controls.C_TextBox.mcTextBox_Moeda();
-            this.mcTextBox_DateTime1 = new pControlsDev.C_TextBox.mcTextBox_DateTime();
             this.mcTextBox1 = new mcdev_controls.c_TextBox.mcTextBox(this.components);
             this.mcButton1 = new mcdev_controls.Generic.mcButton(this.components);
             this.mcLabelVertical1 = new mcdev_controls.Generic.mcLabelVertical();
@@ -93,30 +92,13 @@
             0,
             0,
             0});
-            this.mcTextBox_Moeda1._DESC_VALID_VAZIO = null;
-            this.mcTextBox_Moeda1._MENSMDI = null;
             this.mcTextBox_Moeda1._SHOWSIMBOLO = false;
-            this.mcTextBox_Moeda1._VALID_VAZIO = false;
             this.mcTextBox_Moeda1.Location = new System.Drawing.Point(28, 67);
             this.mcTextBox_Moeda1.Name = "mcTextBox_Moeda1";
             this.mcTextBox_Moeda1.Size = new System.Drawing.Size(100, 20);
             this.mcTextBox_Moeda1.TabIndex = 3;
             this.mcTextBox_Moeda1.Text = "26,65";
             this.mcTextBox_Moeda1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // mcTextBox_DateTime1
-            // 
-            this.mcTextBox_DateTime1._DESC_VALID_VAZIO = null;
-            this.mcTextBox_DateTime1._FORMAT = pControlsDev.C_TextBox.TipoFormato.Data;
-            this.mcTextBox_DateTime1._MENSMDI = null;
-            this.mcTextBox_DateTime1._VALID_VAZIO = false;
-            this.mcTextBox_DateTime1.CustomFormat = "dd/MM/yyyy";
-            this.mcTextBox_DateTime1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.mcTextBox_DateTime1.formato_campo = pControlsDev.C_TextBox.TipoFormato.Data;
-            this.mcTextBox_DateTime1.Location = new System.Drawing.Point(28, 40);
-            this.mcTextBox_DateTime1.Name = "mcTextBox_DateTime1";
-            this.mcTextBox_DateTime1.Size = new System.Drawing.Size(111, 20);
-            this.mcTextBox_DateTime1.TabIndex = 2;
             // 
             // mcTextBox1
             // 
@@ -147,14 +129,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(551, 291);
+            this.ClientSize = new System.Drawing.Size(551, 352);
             this.Controls.Add(this.mcLabelVertical1);
             this.Controls.Add(this.mcExpandVerticalCollapsePanel1);
             this.Controls.Add(this.mcExpandCollapsePanel1);
             this.Controls.Add(this.mcPanelBorderRounded1);
             this.Controls.Add(this.mcTextBox_Moeda1);
-            this.Controls.Add(this.mcTextBox_DateTime1);
-            this.Controls.Add(this.mcTextBox1);
             this.Controls.Add(this.mcButton1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -167,7 +147,6 @@
 
         private Generic.mcButton mcButton1;
         private c_TextBox.mcTextBox mcTextBox1;
-        private pControlsDev.C_TextBox.mcTextBox_DateTime mcTextBox_DateTime1;
         private C_TextBox.mcTextBox_Moeda mcTextBox_Moeda1;
         private Painel.mcPanelBorderRounded mcPanelBorderRounded1;
         private Headers.mcExpandCollapsePanel mcExpandCollapsePanel1;

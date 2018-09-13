@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace pControlsDev.C_TextBox
+namespace mcdev_controls.C_TextBox
 {
     public enum TipoFormato
     {
@@ -19,12 +19,9 @@ namespace pControlsDev.C_TextBox
         Hora_Segundo
     }
 
+    [Designer(typeof(TextBoxDesigner))]
     public partial class mcTextBox_DateTime : DateTimePicker
     {
-        public bool _VALID_VAZIO { get; set; }
-        public String _DESC_VALID_VAZIO { get; set; }
-        public String _MENSMDI { get; set; }
-
         [Browsable(false)]
         public TipoFormato formato_campo { get; set; }
         public TipoFormato _FORMAT 

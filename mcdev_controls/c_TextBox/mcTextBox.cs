@@ -1,4 +1,5 @@
-﻿using System;
+﻿using mcdev_controls.C_TextBox;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
@@ -9,6 +10,7 @@ using System.Windows.Forms;
 
 namespace mcdev_controls.c_TextBox
 {
+    [Designer(typeof(TextBoxDesigner))]
     public partial class mcTextBox : TextBox
     {
         public mcTextBox()

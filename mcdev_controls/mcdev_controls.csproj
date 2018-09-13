@@ -54,6 +54,7 @@
     <Compile Include="c_TextBox\mcTextBox_Moeda.designer.cs">
       <DependentUpon>mcTextBox_Moeda.cs</DependentUpon>
     </Compile>
+    <Compile Include="c_TextBox\TextBoxDesigner.cs" />
     <Compile Include="Dialog\mcConfirme_Dialog.cs">
       <SubType>Form</SubType>
     </Compile>

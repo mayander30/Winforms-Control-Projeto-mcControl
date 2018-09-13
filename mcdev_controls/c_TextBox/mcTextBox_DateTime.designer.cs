@@ -1,4 +1,4 @@
-﻿namespace pControlsDev.C_TextBox
+﻿namespace mcdev_controls.C_TextBox
 {
     partial class mcTextBox_DateTime
     {
