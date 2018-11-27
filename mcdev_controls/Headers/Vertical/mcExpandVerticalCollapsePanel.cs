@@ -83,10 +83,6 @@ namespace mcdev_controls.Headers.Vertical
             }
         }
 
-        /// <summary>
-        /// Set flag for expand or collapse panel content
-        /// (true - expanded, false - collapsed)
-        /// </summary>
         [Category("ExpandCollapsePanel")]
         [Description("Expand or collapse panel content.")]
         [Browsable(true)]
@@ -119,11 +115,6 @@ namespace mcdev_controls.Headers.Vertical
             }
         }
 
-        
-        
-        /// <summary>
-        /// Occurs when the panel has expanded or collapsed
-        /// </summary>
         [Category("ExpandCollapsePanel")]
         [Description("Occurs when the panel has expanded or collapsed.")]
         [Browsable(true)]

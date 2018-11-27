@@ -36,6 +36,7 @@
             this.mcTextBox1 = new mcdev_controls.c_TextBox.mcTextBox(this.components);
             this.mcButton1 = new mcdev_controls.Generic.mcButton(this.components);
             this.mcLabelVertical1 = new mcdev_controls.Generic.mcLabelVertical();
+            this.mcTextBox2 = new mcdev_controls.c_TextBox.mcTextBox(this.components);
             this.SuspendLayout();
             // 
             // mcExpandVerticalCollapsePanel1
@@ -49,7 +50,7 @@
             this.mcExpandVerticalCollapsePanel1.allowExpand = true;
             this.mcExpandVerticalCollapsePanel1.BackColor = System.Drawing.SystemColors.Control;
             this.mcExpandVerticalCollapsePanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.mcExpandVerticalCollapsePanel1.ExpandedWidth = 0;
+            this.mcExpandVerticalCollapsePanel1.ExpandedWidth = 139;
             this.mcExpandVerticalCollapsePanel1.ForeColor = System.Drawing.Color.White;
             this.mcExpandVerticalCollapsePanel1.IsExpanded = true;
             this.mcExpandVerticalCollapsePanel1.Location = new System.Drawing.Point(385, 13);
@@ -125,11 +126,20 @@
             this.mcLabelVertical1.TabIndex = 7;
             this.mcLabelVertical1.Text = "Controles TextBox";
             // 
+            // mcTextBox2
+            // 
+            this.mcTextBox2.Location = new System.Drawing.Point(135, 333);
+            this.mcTextBox2.Name = "mcTextBox2";
+            this.mcTextBox2.Size = new System.Drawing.Size(162, 20);
+            this.mcTextBox2.TabIndex = 8;
+            this.mcTextBox2.Text = "mcTextBox2";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(551, 352);
+            this.ClientSize = new System.Drawing.Size(551, 441);
+            this.Controls.Add(this.mcTextBox2);
             this.Controls.Add(this.mcLabelVertical1);
             this.Controls.Add(this.mcExpandVerticalCollapsePanel1);
             this.Controls.Add(this.mcExpandCollapsePanel1);
@@ -152,6 +162,7 @@
         private Headers.mcExpandCollapsePanel mcExpandCollapsePanel1;
         private Headers.Vertical.mcExpandVerticalCollapsePanel mcExpandVerticalCollapsePanel1;
         private Generic.mcLabelVertical mcLabelVertical1;
+        private c_TextBox.mcTextBox mcTextBox2;
 
     }
 }

@@ -6,32 +6,15 @@ using System.Windows.Forms;
 
 namespace mcdev_controls.Headers.Vertical
 {
-    /// <summary>
-    /// Button with two states: expanded/collapsed
-    /// </summary>
-    /// 
     [ToolboxItem(false)]
     public partial class ExpandVerticalCollapseButton : UserControl
     {
-        /// <summary>
-        /// Image displays expanded state of button
-        /// </summary>
         private Image _expanded;
-        /// <summary>
-        /// Image displays collapsed state of button
-        /// </summary>
+
         private Image _collapsed;
 
-        /// <summary>
-        /// Set flag for expand or collapse button
-        /// (true - expanded, false - collapsed)
-        /// </summary>
         private bool isExpanded;
 
-        /// <summary>
-        /// Set flag for expand or collapse button
-        /// (true - expanded, false - collapsed)
-        /// </summary>
         [Browsable(true)]
         [Category("ExpandCollapseButton_B")]
         [Description("Expand or collapse button.")]
@@ -45,9 +28,6 @@ namespace mcdev_controls.Headers.Vertical
             }
         }
 
-        /// <summary>
-        /// Occurs when the button has expanded or collapsed
-        /// </summary>
         [Category("ExpandCollapseButton_B")]
         [Description("Occurs when the button has expanded or collapsed.")]
         [Browsable(true)]
