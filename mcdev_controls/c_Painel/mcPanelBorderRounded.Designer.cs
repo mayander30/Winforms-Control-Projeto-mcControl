@@ -1,6 +1,6 @@
-﻿namespace mcdev_controls.c_TextBox
+﻿namespace mcdev_controls.c_Painel
 {
-    partial class mcTextBox_DateTime
+    partial class mcPanelBorderRounded
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,13 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // TextBox_DateTime.cs
-            // 
-            this.Name = "TextBox_DateTime.cs";
-            this.ResumeLayout(false);
-
+            components = new System.ComponentModel.Container();
         }
 
         #endregion

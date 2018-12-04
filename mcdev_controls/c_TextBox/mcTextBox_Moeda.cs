@@ -8,7 +8,7 @@ using System.Text;
 using mcdev_controls.Models;
 using System.Windows.Forms;
 
-namespace mcdev_controls.C_TextBox
+namespace mcdev_controls.c_TextBox
 {
     [Designer(typeof(TextBoxDesigner))]
     public partial class mcTextBox_Moeda : TextBox

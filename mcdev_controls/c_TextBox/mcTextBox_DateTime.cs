@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace mcdev_controls.C_TextBox
+namespace mcdev_controls.c_TextBox
 {
     public enum TipoFormato
     {

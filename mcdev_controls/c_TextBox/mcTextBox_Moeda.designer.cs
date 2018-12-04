@@ -1,4 +1,4 @@
-﻿namespace mcdev_controls.C_TextBox
+﻿namespace mcdev_controls.c_TextBox
 {
     partial class mcTextBox_Moeda
     {

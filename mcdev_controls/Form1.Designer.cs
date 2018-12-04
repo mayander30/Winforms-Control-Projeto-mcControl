@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.mcExpandVerticalCollapsePanel1 = new mcdev_controls.Headers.Vertical.mcExpandVerticalCollapsePanel();
-            this.mcExpandCollapsePanel1 = new mcdev_controls.Headers.mcExpandCollapsePanel();
-            this.mcPanelBorderRounded1 = new mcdev_controls.Painel.mcPanelBorderRounded();
-            this.mcTextBox_Moeda1 = new mcdev_controls.C_TextBox.mcTextBox_Moeda();
+            this.mcExpandVerticalCollapsePanel1 = new mcdev_controls.c_Headers.Vertical.mcExpandVerticalCollapsePanel();
+            this.mcExpandCollapsePanel1 = new mcdev_controls.c_Headers.mcExpandCollapsePanel();
+            this.mcPanelBorderRounded1 = new mcdev_controls.c_Painel.mcPanelBorderRounded();
+            this.mcTextBox_Moeda1 = new mcdev_controls.c_TextBox.mcTextBox_Moeda();
             this.mcTextBox1 = new mcdev_controls.c_TextBox.mcTextBox(this.components);
-            this.mcButton1 = new mcdev_controls.Generic.mcButton(this.components);
-            this.mcLabelVertical1 = new mcdev_controls.Generic.mcLabelVertical();
+            this.mcButton1 = new mcdev_controls.c_Generic.mcButton(this.components);
+            this.mcLabelVertical1 = new mcdev_controls.c_Generic.mcLabelVertical();
             this.mcTextBox2 = new mcdev_controls.c_TextBox.mcTextBox(this.components);
             this.SuspendLayout();
             // 
@@ -155,13 +155,13 @@
 
         #endregion
 
-        private Generic.mcButton mcButton1;
+        private c_Generic.mcButton mcButton1;
         private c_TextBox.mcTextBox mcTextBox1;
-        private C_TextBox.mcTextBox_Moeda mcTextBox_Moeda1;
-        private Painel.mcPanelBorderRounded mcPanelBorderRounded1;
-        private Headers.mcExpandCollapsePanel mcExpandCollapsePanel1;
-        private Headers.Vertical.mcExpandVerticalCollapsePanel mcExpandVerticalCollapsePanel1;
-        private Generic.mcLabelVertical mcLabelVertical1;
+        private c_TextBox.mcTextBox_Moeda mcTextBox_Moeda1;
+        private c_Painel.mcPanelBorderRounded mcPanelBorderRounded1;
+        private c_Headers.mcExpandCollapsePanel mcExpandCollapsePanel1;
+        private c_Headers.Vertical.mcExpandVerticalCollapsePanel mcExpandVerticalCollapsePanel1;
+        private c_Generic.mcLabelVertical mcLabelVertical1;
         private c_TextBox.mcTextBox mcTextBox2;
 
     }

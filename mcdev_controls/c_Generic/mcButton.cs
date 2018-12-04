@@ -1,5 +1,4 @@
-﻿using mcdev_controls.c_TextBox;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
@@ -8,17 +7,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace mcdev_controls.c_TextBox
+namespace mcdev_controls.c_Generic
 {
-    [Designer(typeof(TextBoxDesigner))]
-    public partial class mcTextBox : TextBox
+    public partial class mcButton : Button
     {
-        public mcTextBox()
+        public mcButton()
         {
             InitializeComponent();
         }
 
-        public mcTextBox(IContainer container)
+        public mcButton(IContainer container)
         {
             container.Add(this);
 

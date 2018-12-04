@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="pControlsDev">
+      <HintPath>..\..\..\..\Projeto Desktop\dll\pControlsDev.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
@@ -42,6 +45,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="c_Card\mcCard_Body.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="c_Card\mcCard_Body.Designer.cs">
+      <DependentUpon>mcCard_Body.cs</DependentUpon>
+    </Compile>
+    <Compile Include="c_Card\mcExpandCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="c_Card\mcExpandCard.designer.cs">
+      <DependentUpon>mcExpandCard.cs</DependentUpon>
+    </Compile>
     <Compile Include="c_TextBox\mcTextBox_DateTime.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -55,22 +70,22 @@
       <DependentUpon>mcTextBox_Moeda.cs</DependentUpon>
     </Compile>
     <Compile Include="c_TextBox\TextBoxDesigner.cs" />
-    <Compile Include="Dialog\mcConfirme_Dialog.cs">
+    <Compile Include="c_Dialog\mcConfirme_Dialog.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Dialog\mcConfirme_Dialog.designer.cs">
+    <Compile Include="c_Dialog\mcConfirme_Dialog.designer.cs">
       <DependentUpon>mcConfirme_Dialog.cs</DependentUpon>
     </Compile>
-    <Compile Include="Dialog\mcInput_Dialog.cs">
+    <Compile Include="c_Dialog\mcInput_Dialog.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Dialog\mcInput_Dialog.designer.cs">
+    <Compile Include="c_Dialog\mcInput_Dialog.designer.cs">
       <DependentUpon>mcInput_Dialog.cs</DependentUpon>
     </Compile>
-    <Compile Include="Dialog\mcMessage_Dialog.cs">
+    <Compile Include="c_Dialog\mcMessage_Dialog.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Dialog\mcMessage_Dialog.designer.cs">
+    <Compile Include="c_Dialog\mcMessage_Dialog.designer.cs">
       <DependentUpon>mcMessage_Dialog.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
@@ -79,47 +94,47 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Generic\mcLabelVertical.cs">
+    <Compile Include="c_Generic\mcLabelVertical.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Generic\mcLabelVertical.Designer.cs">
+    <Compile Include="c_Generic\mcLabelVertical.Designer.cs">
       <DependentUpon>mcLabelVertical.cs</DependentUpon>
     </Compile>
-    <Compile Include="Generic\mcButton.cs">
+    <Compile Include="c_Generic\mcButton.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Generic\mcButton.Designer.cs">
+    <Compile Include="c_Generic\mcButton.Designer.cs">
       <DependentUpon>mcButton.cs</DependentUpon>
     </Compile>
-    <Compile Include="Headers\ExpandCollapseButton_B.cs">
+    <Compile Include="c_Headers\ExpandCollapseButton_B.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Headers\ExpandCollapseButton_B.designer.cs">
+    <Compile Include="c_Headers\ExpandCollapseButton_B.designer.cs">
       <DependentUpon>ExpandCollapseButton_B.cs</DependentUpon>
     </Compile>
-    <Compile Include="Headers\ExpandCollapseEventArgs.cs" />
-    <Compile Include="Headers\mcExpandCollapsePanel.cs">
+    <Compile Include="c_Headers\ExpandCollapseEventArgs.cs" />
+    <Compile Include="c_Headers\mcExpandCollapsePanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Headers\mcExpandCollapsePanel.designer.cs">
+    <Compile Include="c_Headers\mcExpandCollapsePanel.designer.cs">
       <DependentUpon>mcExpandCollapsePanel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Headers\ExpandCollapsePanelActionList.cs" />
-    <Compile Include="Headers\ExpandCollapsePanelDesigner.cs" />
-    <Compile Include="Headers\Vertical\ExpandVerticalCollapseButton.cs">
+    <Compile Include="c_Headers\ExpandCollapsePanelActionList.cs" />
+    <Compile Include="c_Headers\ExpandCollapsePanelDesigner.cs" />
+    <Compile Include="c_Headers\Vertical\ExpandVerticalCollapseButton.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Headers\Vertical\ExpandVerticalCollapseButton.designer.cs">
+    <Compile Include="c_Headers\Vertical\ExpandVerticalCollapseButton.designer.cs">
       <DependentUpon>ExpandVerticalCollapseButton.cs</DependentUpon>
     </Compile>
-    <Compile Include="Headers\Vertical\mcExpandVerticalCollapsePanel.cs">
+    <Compile Include="c_Headers\Vertical\mcExpandVerticalCollapsePanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Headers\Vertical\mcExpandVerticalCollapsePanel.designer.cs">
+    <Compile Include="c_Headers\Vertical\mcExpandVerticalCollapsePanel.designer.cs">
       <DependentUpon>mcExpandVerticalCollapsePanel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Headers\Vertical\ExpandVerticalCollapsePanelActionList.cs" />
-    <Compile Include="Headers\Vertical\ExpandVerticalCollapsePanelDesigner.cs" />
+    <Compile Include="c_Headers\Vertical\ExpandVerticalCollapsePanelActionList.cs" />
+    <Compile Include="c_Headers\Vertical\ExpandVerticalCollapsePanelDesigner.cs" />
     <Compile Include="c_TextBox\mcTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -127,11 +142,11 @@
       <DependentUpon>mcTextBox.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Validacoes.cs" />
-    <Compile Include="Painel\GraphicsExtension.cs" />
-    <Compile Include="Painel\mcPanelBorderRounded.cs">
+    <Compile Include="c_Painel\GraphicsExtension.cs" />
+    <Compile Include="c_Painel\mcPanelBorderRounded.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Painel\mcPanelBorderRounded.Designer.cs">
+    <Compile Include="c_Painel\mcPanelBorderRounded.Designer.cs">
       <DependentUpon>mcPanelBorderRounded.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -142,34 +157,40 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="c_Card\mcCard_Body.resx">
+      <DependentUpon>mcCard_Body.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="c_Card\mcExpandCard.resx">
+      <DependentUpon>mcExpandCard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="c_TextBox\mcTextBox_DateTime.resx">
       <DependentUpon>mcTextBox_DateTime.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="c_TextBox\mcTextBox_Moeda.resx">
       <DependentUpon>mcTextBox_Moeda.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Dialog\mcConfirme_Dialog.resx">
+    <EmbeddedResource Include="c_Dialog\mcConfirme_Dialog.resx">
       <DependentUpon>mcConfirme_Dialog.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Dialog\mcInput_Dialog.resx">
+    <EmbeddedResource Include="c_Dialog\mcInput_Dialog.resx">
       <DependentUpon>mcInput_Dialog.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Dialog\mcMessage_Dialog.resx">
+    <EmbeddedResource Include="c_Dialog\mcMessage_Dialog.resx">
       <DependentUpon>mcMessage_Dialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Headers\ExpandCollapseButton_B.resx">
+    <EmbeddedResource Include="c_Headers\ExpandCollapseButton_B.resx">
       <DependentUpon>ExpandCollapseButton_B.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Headers\mcExpandCollapsePanel.resx">
+    <EmbeddedResource Include="c_Headers\mcExpandCollapsePanel.resx">
       <DependentUpon>mcExpandCollapsePanel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Headers\Vertical\ExpandVerticalCollapseButton.resx">
+    <EmbeddedResource Include="c_Headers\Vertical\ExpandVerticalCollapseButton.resx">
       <DependentUpon>ExpandVerticalCollapseButton.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Headers\Vertical\mcExpandVerticalCollapsePanel.resx">
+    <EmbeddedResource Include="c_Headers\Vertical\mcExpandVerticalCollapsePanel.resx">
       <DependentUpon>mcExpandVerticalCollapsePanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

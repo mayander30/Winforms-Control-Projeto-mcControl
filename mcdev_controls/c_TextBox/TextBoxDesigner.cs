@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace mcdev_controls.C_TextBox
+namespace mcdev_controls.c_TextBox
 {
     [System.Security.Permissions.PermissionSet(System.Security.Permissions.SecurityAction.Demand, Name = "FullTrust")]
     public class TextBoxDesigner : System.Windows.Forms.Design.ScrollableControlDesigner
@@ -133,14 +133,14 @@ namespace mcdev_controls.C_TextBox
                                                      "Name", "Configurações textbox",
                                                      "Name do textbox"));
 
-            if (textbox is mcdev_controls.C_TextBox.mcTextBox_DateTime)
+            if (textbox is mcdev_controls.c_TextBox.mcTextBox_DateTime)
             {
                 items.Add(new DesignerActionPropertyItem("_FORMAT",
                                                      "_FORMAT", "Configurações textbox",
                                                      "Formato data ou hora do campo"));
             }
 
-            if (textbox is mcdev_controls.C_TextBox.mcTextBox_Moeda)
+            if (textbox is mcdev_controls.c_TextBox.mcTextBox_Moeda)
             {
                 items.Add(new DesignerActionPropertyItem("_DECIMAIS_MOEDA",
                                                      "_DECIMAIS_MOEDA", "Configurações textbox",
