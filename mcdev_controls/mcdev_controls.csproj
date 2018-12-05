@@ -51,6 +51,7 @@
     <Compile Include="c_Card\mcCard_Body.Designer.cs">
       <DependentUpon>mcCard_Body.cs</DependentUpon>
     </Compile>
+    <Compile Include="c_Card\mcCard_ControlDesigner.cs" />
     <Compile Include="c_Card\mcExpandCard.cs">
       <SubType>UserControl</SubType>
     </Compile>

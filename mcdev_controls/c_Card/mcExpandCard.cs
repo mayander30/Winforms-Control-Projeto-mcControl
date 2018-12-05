@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace mcdev_controls.c_Card
 {
-    [Designer("System.Windows.Forms.Design.ParentControlDesigner, System.Design", typeof(IDesigner))] 
+    [Designer(typeof(mcCard_ControlDesigner))] 
     public partial class mcExpandCard : UserControl
     {
         #region propriedades do controle
@@ -32,6 +32,12 @@ namespace mcdev_controls.c_Card
 
         public Size SizeControl { get; set; }
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
+        public Panel ContentsPanel
+        {
+            get { return painel_content; }
+        }
+
         #endregion
 
 
@@ -41,6 +47,9 @@ namespace mcdev_controls.c_Card
         public mcExpandCard()
         {
             InitializeComponent();
+
+            TypeDescriptor.AddAttributes(this.painel_content,
+            new DesignerAttribute(typeof(mcCard_ControlDesigner)));
         }
 
         #region functions set propiedades

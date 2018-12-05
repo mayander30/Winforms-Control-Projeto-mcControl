@@ -33,7 +33,7 @@
             this.imgExpand = new System.Windows.Forms.PictureBox();
             this.imgHeader = new System.Windows.Forms.PictureBox();
             this.painel_header = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.painel_content = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.imgExpand)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgHeader)).BeginInit();
             this.painel_header.SuspendLayout();
@@ -102,19 +102,19 @@
             this.painel_header.MouseLeave += new System.EventHandler(this.painel_header_MouseLeave);
             this.painel_header.MouseHover += new System.EventHandler(this.painel_header_MouseHover);
             // 
-            // panel1
+            // painel_content
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.panel1.Location = new System.Drawing.Point(-1, 21);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(299, 79);
-            this.panel1.TabIndex = 2;
+            this.painel_content.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.painel_content.Location = new System.Drawing.Point(-1, 21);
+            this.painel_content.Name = "painel_content";
+            this.painel_content.Size = new System.Drawing.Size(299, 99);
+            this.painel_content.TabIndex = 2;
             // 
             // mcExpandCard
             // 
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.painel_header);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.painel_content);
             this.Name = "mcExpandCard";
             this.Size = new System.Drawing.Size(298, 226);
             this.Load += new System.EventHandler(this.mcExpandCard_Load);
@@ -133,6 +133,6 @@
         public System.Windows.Forms.PictureBox imgHeader;
         private System.Windows.Forms.Panel painel_header;
         private System.Windows.Forms.Label lblHeader;
-        public System.Windows.Forms.Panel panel1;
+        public System.Windows.Forms.Panel painel_content;
     }
 }
