@@ -19,65 +19,73 @@ namespace mcdev_controls.c_Card
         public bool _IsExpanded { get { return IsExpanded; } set { SetExpanded(value); } }
 
         [Browsable(true)]
+        public bool _AllowExpand { get { return AllowExpand; } set { SetAllowExpand(value); } }
+
+        [Browsable(true)]
         public Color _BackColorHeader { get { return painel_header.BackColor; } set { SetBackColorHeader(value); } }
 
+        [Browsable(true)]
+        public Image _ImgHeader { get { return imgHeader.Image; } set { SetImagemHeader(value); } }
+
         #endregion
-
-
 
         #region propiedades de armazanamento dos valores
 
         [Browsable(false)]
         public bool IsExpanded { get; set; }
 
+        [Browsable(false)]
         public Size SizeControl { get; set; }
 
+        [Browsable(false)]
+        public bool AllowExpand { get; set; }
+
+        [Browsable(false)]
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
         public Panel ContentsPanel
         {
             get { return painel_content; }
         }
 
+        [Browsable(false)]
+        public int ExpandedHeight { get; set; }
+
         #endregion
 
-
-        /// <summary>
-        /// Constructor
-        /// </summary>
         public mcExpandCard()
         {
-            InitializeComponent();
+            InitializeComponent();         
+            
+            IsExpanded = true;
+            AllowExpand = true;
+            ExpandedHeight = this.Height;
 
-            TypeDescriptor.AddAttributes(this.painel_content,
-            new DesignerAttribute(typeof(mcCard_ControlDesigner)));
+            SizeControl = this.Size;
         }
 
         #region functions set propiedades
 
-        private void SetImagemHeader()
+        private void SetImagemHeader(Image imagem)
         {
-            if (this.imgHeader == null)
+            if (imagem == null)
             {
                 return;
             }
 
-            //if (!_AllowExpand)
-            //{
-            //    this.imgHeader.Show();
-
-            //    lblHeader.Location = new Point(35, 7);
-            //    this.pictureBox1.Show();
-            //    this.lbl_separator.Show();
-
-            //    this.pictureBox1.Hide();
-            //    this.lbl_separator.Hide();
-            //}
-            //else
-            //{
-            //    imgHeader = null;
-            //    this.imgHeader.Show();
-            //    MessageBox.Show(" Para definir a imagem no header, defina AllowExpand para false, desmarque! ");
-            //}
+            if (!AllowExpand)
+            {
+                this.imgHeader.Show();
+                this.imgHeader.Image = imagem;
+                lblHeader.Location = new Point(36, 3);
+                this.imgExpand.Hide();
+                this.lbl_separator.Hide();
+            }
+            else
+            {
+                imgHeader.Image = null;
+                this.imgHeader.Show();
+                MessageBox.Show(" Para definir a imagem no header, defina AllowExpand para false, desmarque! ");
+            }
         }
 
         private void SetTextHeader(String value)
@@ -90,23 +98,52 @@ namespace mcdev_controls.c_Card
             if (IsExpanded)
             {
                 IsExpanded = false;
+                
+                ExpandedHeight = this.Height;
+                
                 this.Size = new Size(this.Size.Width, painel_header.Height+1);
 
                 var bmp = Properties.Resources.Expand;
                 bmp.RotateFlip(RotateFlipType.Rotate180FlipNone);
                 imgExpand.Image = bmp;
+                
             }
             else
             {
                 IsExpanded = true;
-
-                this.Size = SizeControl;
+                
+                this.Size = new Size(SizeControl.Width, ExpandedHeight);
 
                 var bmp = Properties.Resources.Expand;
                 bmp.RotateFlip(RotateFlipType.RotateNoneFlipNone);
-                imgExpand.Image = bmp;
-
+                imgExpand.Image = bmp;                
             }
+        }
+
+        private void SetAllowExpand(bool value)
+        {
+            AllowExpand = value;
+
+            if (AllowExpand)
+            {
+                lblHeader.Location = new Point(36, 3);
+                //lblHeader.Size = new System.Drawing.Size(34, 151);
+
+                imgExpand.Show();
+                lbl_separator.Show();
+
+                imgHeader.Hide();
+                imgHeader.Image = null;
+            }
+            else
+            {
+                lblHeader.Location = new Point(3, 3);
+                //lblHeader.Size = new System.Drawing.Size(34, this.Size.Height);
+                imgExpand.Hide();
+                lbl_separator.Hide();
+            }
+
+            
         }
 
         private void SetBackColorHeader(Color value)
@@ -116,11 +153,11 @@ namespace mcdev_controls.c_Card
 
         #endregion
 
+        #region f_eventos
+
         private void mcExpandCard_Load(object sender, EventArgs e)
         {
-            SizeControl = this.Size;
-
-            
+            SizeControl = this.Size;   
         }
         
         private void painel_header_MouseHover(object sender, EventArgs e)
@@ -137,5 +174,14 @@ namespace mcdev_controls.c_Card
         {
             SetExpanded(IsExpanded);
         }
+
+        private void mcExpandCard_Resize(object sender, EventArgs e)
+        {
+            this.SizeControl = new Size(this.Size.Width, ExpandedHeight);
+        }
+
+        #endregion
+               
+        
     }
 }

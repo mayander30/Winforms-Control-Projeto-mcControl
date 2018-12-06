@@ -1,6 +1,6 @@
-﻿namespace mcdev_controls.c_Card
+﻿namespace mcdev_controls.c_Headers
 {
-    partial class mcExpandCard
+    partial class mcPainelExpand
     {
         /// <summary> 
         /// Required designer variable.
@@ -34,6 +34,7 @@
             this.imgHeader = new System.Windows.Forms.PictureBox();
             this.painel_header = new System.Windows.Forms.Panel();
             this.painel_content = new System.Windows.Forms.Panel();
+            this.lblHeaderVertical = new mcdev_controls.c_Generic.mcLabelVertical();
             ((System.ComponentModel.ISupportInitialize)(this.imgExpand)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgHeader)).BeginInit();
             this.painel_header.SuspendLayout();
@@ -89,6 +90,7 @@
             // painel_header
             // 
             this.painel_header.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.painel_header.Controls.Add(this.lblHeaderVertical);
             this.painel_header.Controls.Add(this.imgExpand);
             this.painel_header.Controls.Add(this.lbl_separator);
             this.painel_header.Controls.Add(this.lblHeader);
@@ -110,12 +112,26 @@
             this.painel_content.Size = new System.Drawing.Size(201, 98);
             this.painel_content.TabIndex = 30;
             // 
-            // mcExpandCard
+            // lblHeaderVertical
+            // 
+            this.lblHeaderVertical.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblHeaderVertical.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHeaderVertical.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblHeaderVertical.Location = new System.Drawing.Point(35, -1);
+            this.lblHeaderVertical.Name = "lblHeaderVertical";
+            this.lblHeaderVertical.Size = new System.Drawing.Size(24, 121);
+            this.lblHeaderVertical.TabIndex = 29;
+            this.lblHeaderVertical.Text = "mcLabelVertical1";
+            this.lblHeaderVertical.Visible = false;
+            this.lblHeaderVertical.MouseDown += new System.Windows.Forms.MouseEventHandler(this.OnMouseDown);
+            // 
+            // mcPainelExpand
             // 
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.painel_content);
             this.Controls.Add(this.painel_header);
-            this.Name = "mcExpandCard";
+            this.Name = "mcPainelExpand";
             this.Size = new System.Drawing.Size(201, 120);
             this.Load += new System.EventHandler(this.mcExpandCard_Load);
             this.Resize += new System.EventHandler(this.mcExpandCard_Resize);
@@ -135,5 +151,6 @@
         private System.Windows.Forms.Panel painel_content;
         public System.Windows.Forms.Panel painel_header;
         public System.Windows.Forms.Label lblHeader;
+        private c_Generic.mcLabelVertical lblHeaderVertical;
     }
 }

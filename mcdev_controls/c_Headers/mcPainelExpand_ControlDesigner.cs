@@ -12,16 +12,16 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.Design;
 
-namespace mcdev_controls.c_Card
+namespace mcdev_controls.c_Headers
 {
-    public class mcCard_ControlDesigner : ParentControlDesigner
+    public class mcPainelExpand_ControlDesigner : ParentControlDesigner
     {
         private DesignerActionListCollection actionLists;
 
         public override void Initialize(IComponent component)
         {
             base.Initialize(component);
-            var contentsPanel = ((mcExpandCard)this.Control).ContentsPanel;
+            var contentsPanel = ((mcPainelExpand)this.Control).ContentsPanel;
             this.EnableDesignMode(contentsPanel, "ContentsPanel");
         }
 
@@ -49,23 +49,23 @@ namespace mcdev_controls.c_Card
                 {
                     actionLists = new DesignerActionListCollection();
                     actionLists.Add(
-                        new mcCard_PropriedadesList(this.Component));
+                        new mcPainelExpand_PropriedadesList(this.Component));
                 }
                 return actionLists;
             }
         }
     }
 
-    public class mcCard_PropriedadesList : System.ComponentModel.Design.DesignerActionList
+    public class mcPainelExpand_PropriedadesList : System.ComponentModel.Design.DesignerActionList
     {
-        private mcExpandCard panel;
+        private mcPainelExpand panel;
 
         private DesignerActionUIService designerActionUISvc = null;
 
-        public mcCard_PropriedadesList(IComponent component)
+        public mcPainelExpand_PropriedadesList(IComponent component)
             : base(component)
         {
-            this.panel = component as mcExpandCard;
+            this.panel = component as mcPainelExpand;
             this.designerActionUISvc =
                 GetService(typeof(DesignerActionUIService))
                 as DesignerActionUIService;
@@ -83,7 +83,6 @@ namespace mcdev_controls.c_Card
                 return prop;
         }
 
-
         public String _TextHeader
         {
             get
@@ -93,6 +92,18 @@ namespace mcdev_controls.c_Card
             set
             {
                 GetPropertyByName("_TextHeader").SetValue(panel, value);
+            }
+        }
+
+        public bool _orentationVertical
+        {
+            get
+            {
+                return panel.orentationVertical;
+            }
+            set
+            {
+                GetPropertyByName("_orentationVertical").SetValue(panel, value);
             }
         }
 
@@ -144,8 +155,6 @@ namespace mcdev_controls.c_Card
             }
         }
 
-        // Implementation of this abstract method creates smart tag   
-        // items, associates their targets, and collects into list. 
         public override DesignerActionItemCollection GetSortedActionItems()
         {
             var items = new DesignerActionItemCollection();
@@ -153,6 +162,10 @@ namespace mcdev_controls.c_Card
             //Define static section header entries.
             items.Add(new DesignerActionHeaderItem("Appearance"));
             //items.Add(new DesignerActionHeaderItem("Information"));
+
+            items.Add(new DesignerActionPropertyItem("_orentationVertical",
+                                                     "Orientação Vertical", "Appearance",
+                                                     "Expand/collapse the panel."));
 
             items.Add(new DesignerActionPropertyItem("_TextHeader",
                                                      "Text Header", "Appearance",

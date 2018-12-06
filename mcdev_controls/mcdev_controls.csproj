@@ -58,6 +58,13 @@
     <Compile Include="c_Card\mcExpandCard.designer.cs">
       <DependentUpon>mcExpandCard.cs</DependentUpon>
     </Compile>
+    <Compile Include="c_Headers\mcPainelExpand_ControlDesigner.cs" />
+    <Compile Include="c_Headers\mcPainelExpand.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="c_Headers\mcPainelExpand.designer.cs">
+      <DependentUpon>mcPainelExpand.cs</DependentUpon>
+    </Compile>
     <Compile Include="c_TextBox\mcTextBox_DateTime.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -107,35 +114,6 @@
     <Compile Include="c_Generic\mcButton.Designer.cs">
       <DependentUpon>mcButton.cs</DependentUpon>
     </Compile>
-    <Compile Include="c_Headers\ExpandCollapseButton_B.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="c_Headers\ExpandCollapseButton_B.designer.cs">
-      <DependentUpon>ExpandCollapseButton_B.cs</DependentUpon>
-    </Compile>
-    <Compile Include="c_Headers\ExpandCollapseEventArgs.cs" />
-    <Compile Include="c_Headers\mcExpandCollapsePanel.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="c_Headers\mcExpandCollapsePanel.designer.cs">
-      <DependentUpon>mcExpandCollapsePanel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="c_Headers\ExpandCollapsePanelActionList.cs" />
-    <Compile Include="c_Headers\ExpandCollapsePanelDesigner.cs" />
-    <Compile Include="c_Headers\Vertical\ExpandVerticalCollapseButton.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="c_Headers\Vertical\ExpandVerticalCollapseButton.designer.cs">
-      <DependentUpon>ExpandVerticalCollapseButton.cs</DependentUpon>
-    </Compile>
-    <Compile Include="c_Headers\Vertical\mcExpandVerticalCollapsePanel.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="c_Headers\Vertical\mcExpandVerticalCollapsePanel.designer.cs">
-      <DependentUpon>mcExpandVerticalCollapsePanel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="c_Headers\Vertical\ExpandVerticalCollapsePanelActionList.cs" />
-    <Compile Include="c_Headers\Vertical\ExpandVerticalCollapsePanelDesigner.cs" />
     <Compile Include="c_TextBox\mcTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -164,6 +142,9 @@
     <EmbeddedResource Include="c_Card\mcExpandCard.resx">
       <DependentUpon>mcExpandCard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="c_Headers\mcPainelExpand.resx">
+      <DependentUpon>mcPainelExpand.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="c_TextBox\mcTextBox_DateTime.resx">
       <DependentUpon>mcTextBox_DateTime.cs</DependentUpon>
     </EmbeddedResource>
@@ -181,18 +162,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="c_Headers\ExpandCollapseButton_B.resx">
-      <DependentUpon>ExpandCollapseButton_B.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="c_Headers\mcExpandCollapsePanel.resx">
-      <DependentUpon>mcExpandCollapsePanel.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="c_Headers\Vertical\ExpandVerticalCollapseButton.resx">
-      <DependentUpon>ExpandVerticalCollapseButton.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="c_Headers\Vertical\mcExpandVerticalCollapsePanel.resx">
-      <DependentUpon>mcExpandVerticalCollapsePanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -226,6 +195,7 @@
     <None Include="Resources\sign_warning.png" />
     <None Include="Resources\Expand.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
