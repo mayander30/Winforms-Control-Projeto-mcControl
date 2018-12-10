@@ -41,6 +41,7 @@ D:\Desktop\Materiais Controls\Winforms-Control-Projeto-mcControl\mcdev_controls\
 D:\Desktop\Materiais Controls\Winforms-Control-Projeto-mcControl\mcdev_controls\bin\Debug\mcdev_controls.pdb
 D:\Desktop\Materiais Controls\Winforms-Control-Projeto-mcControl\mcdev_controls\bin\Debug\pControlsDev.dll
 D:\Desktop\Materiais Controls\Winforms-Control-Projeto-mcControl\mcdev_controls\bin\Debug\Oracle.DataAccess.dll
+D:\Desktop\Materiais Controls\Winforms-Control-Projeto-mcControl\mcdev_controls\obj\Debug\mcdev_controls.csprojResolveAssemblyReference.cache
 D:\Desktop\Materiais Controls\Winforms-Control-Projeto-mcControl\mcdev_controls\obj\Debug\mcdev_controls.c_Card.mcCard_Body.resources
 D:\Desktop\Materiais Controls\Winforms-Control-Projeto-mcControl\mcdev_controls\obj\Debug\mcdev_controls.c_Card.mcExpandCard.resources
 D:\Desktop\Materiais Controls\Winforms-Control-Projeto-mcControl\mcdev_controls\obj\Debug\mcdev_controls.c_Headers.mcPainelExpand.resources

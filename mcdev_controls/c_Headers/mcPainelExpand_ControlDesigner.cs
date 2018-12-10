@@ -131,7 +131,7 @@ namespace mcdev_controls.c_Headers
             }
         }
 
-        public Color _BackColorHeader
+        public Color _HeaderBackColor
         {
             get
             {
@@ -139,7 +139,19 @@ namespace mcdev_controls.c_Headers
             }
             set
             {
-                GetPropertyByName("_BackColorHeader").SetValue(panel, value);
+                GetPropertyByName("_HeaderBackColor").SetValue(panel, value);
+            }
+        }
+
+        public Color _HeaderForeColor
+        {
+            get
+            {
+                return panel.lblHeader.ForeColor;
+            }
+            set
+            {
+                GetPropertyByName("_HeaderForeColor").SetValue(panel, value);
             }
         }
 
@@ -179,9 +191,13 @@ namespace mcdev_controls.c_Headers
                                                      "AllowExpand", "Appearance",
                                                      "Permiti Expandir ou Não"));
 
-            items.Add(new DesignerActionPropertyItem("_BackColorHeader",
+            items.Add(new DesignerActionPropertyItem("_HeaderBackColor",
                                                      "BackColorHeader", "Appearance",
                                                      "Cor Header"));
+
+            items.Add(new DesignerActionPropertyItem("_HeaderForeColor",
+                                                     "HeaderForeColor", "Appearance",
+                                                     "Cor Texto Header"));
 
             items.Add(new DesignerActionPropertyItem("_ImgHeader",
                                                      "Image Header", "Appearance",

@@ -14,22 +14,39 @@ namespace mcdev_controls.c_Headers
         #region propriedades do controle
 
         [Browsable(true)]
-        public bool _orentationVertical { get { return orentationVertical; } set { SetOrentarion(value); } }
+        [Category("PainelExpand")]
+        [Description("Header Vertical ou Horizontal")]
+        public bool _OrentationVertical { get { return orentationVertical; } set { SetOrentarion(value); } }
 
         [Browsable(true)]
+        [Category("PainelExpand")]
+        [Description("Texto Header")]
         public String _TextHeader { get { return lblHeader.Text; } set { SetTextHeader(value); } }
 
         [Browsable(true)]
+        [Category("PainelExpand")]
+        [Description("Painel Fechado ou Aberto")]
         public bool _IsExpanded { get { return IsExpanded; } set { SetExpanded(value); } }
 
         [Browsable(true)]
+        [Category("PainelExpand")]
+        [Description("Permite expandir painel ou somente header com opção de incluir imagem _ImgHeader")]
         public bool _AllowExpand { get { return AllowExpand; } set { SetAllowExpand(value); } }
 
         [Browsable(true)]
-        public Color _BackColorHeader { get { return painel_header.BackColor; } set { SetBackColorHeader(value); } }
+        [Category("PainelExpand")]
+        [Description("Cor do Header")]
+        public Color _HeaderBackColor { get { return painel_header.BackColor; } set { SetBackColorHeader(value); } }
 
         [Browsable(true)]
+        [Category("PainelExpand")]
+        [Description("Imagem Header left, só pode incluir está imagem caso painel seja _AllowExpand=false ")]
         public Image _ImgHeader { get { return imgHeader.Image; } set { SetImagemHeader(value); } }
+
+        [Browsable(true)]
+        [Category("PainelExpand")]
+        [Description("Cor do Header")]
+        public Color _HeaderForeColor { get { return lblHeader.ForeColor; } set { SetForeColorHeader(value); } }
 
         #endregion
 
@@ -192,6 +209,12 @@ namespace mcdev_controls.c_Headers
         private void SetBackColorHeader(Color value)
         {
             painel_header.BackColor = value;
+        }
+
+        private void SetForeColorHeader(Color value)
+        {
+            lblHeaderVertical.ForeColor = value;
+            lblHeader.ForeColor = value;
         }
 
         private void SetOrentarion(bool value)
